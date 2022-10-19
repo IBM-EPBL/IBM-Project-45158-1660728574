@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #7BD5F5,#4ADEDE,#1CA7EC,#1F2F98);
+        }
+        h1{
+            color: white;
+            font-family: Comic;
+        }
+        #form_frame{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(to right, #FDC094, #FF9190);
+            border-radius: 20px;
+            margin: 50px;
+            padding: 20px;
+        }
+        label{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+        }
+        input{
+            align-items:flex-start;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            border-color: aqua;
+        }
+        button{
+            margin-left: 45px;
+            margin-right: 45px ;
+            display: inline-block;
+            border-color: aliceblue;
+            border-radius: 10px;
+            color: black;
+            font-family: forte;
+            background-image: linear-gradient(to right, rgb(30, 202, 151), aqua);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="form_frame">
+            <form action="#">
+                <h1>Registration Form</h1>
+                <label for="uname">Username: </label>
+                <input type="text" name="uname" required><br><br>
+                <label for="qualification">Qualification: </label>
+                <input type="text" name="qualify" required><br><br>
+                <label for="age">Age: </label>
+                <input type="number" name="age" required><br><br>
+                <label for="email">Email Id: </label>
+                <input type="email" name="emailid" required><br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
