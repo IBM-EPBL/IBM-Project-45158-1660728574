@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block content %}
+
+<div class="login-frame" id="id01">
+    <form action="/signin" class="loginform" method="post">
+        <h1>LOGIN</h1>
+        <div class="group">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category,message in messages %}
+                        <p class="flash-msg alert alert-{{category}}" >{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <input type="text" name = "Username" placeholder="Username" required>
+        </div>
+        <div class="group">
+            <input type="password" name="Password" placeholder="Password" required>
+        </div>
+        <div class="group">
+            <input type="submit" name="signin" id="signin" value="Login">
+        </div>
+        <div class="foot"> 
+            <hr>
+            <p>Don't have an account?<a href="/register" onclick="check(this.form)"><i>Signup</i></a></p>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
