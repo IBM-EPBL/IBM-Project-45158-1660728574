@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Assistant</title>
+    <style>
+        body{
+            background-color: black;
+            background-image: url("https://imageuploadbyrevathi.s3.jp-tok.cloud-object-storage.appdomain.cloud/h3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            color: rgb(255, 0, 0);
+            font-family: forte;
+            font-size: 50px;
+        }
+        p{
+            color: rgb(124, 1, 114);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Patient Registration </h1>
+        <h1>(OPD, Casualty, Appointment & ORS)</h1>
+        <p>The patient registration module of the e-Hospital <br> application is used for patient registration <br> in the OPD and Casualty departments as well as <br> to book, confirm and cancel appointments.</p>
+    </div>
+</body>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "66a20c11-cda3-443b-885f-8ad0ed2c4227", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "f0e03510-f198-4fa8-a111-86f1a4f21a35", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
