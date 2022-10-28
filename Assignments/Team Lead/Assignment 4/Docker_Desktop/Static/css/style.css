@@ -1,0 +1,224 @@
+body{
+    background: linear-gradient(to right, #2b2b2bb2, #1d1f22, #000000);
+}
+/----------signup-form---------/
+.signup-frame{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    border: none;
+}
+.signupform{
+    width: 400px;
+    padding: 30px;
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    top: 50px;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.signupform input[type="text"],
+.signupform input[type = "email"],
+.signupform input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    font-family: Berlin Sans FB;
+    border-radius: 24px;
+    transition: 0.25s;
+    color: rgb(255, 255, 255);
+}
+
+.signupform h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Freestyle Script;
+}
+.signupform input[type="text"]:hover,
+.signupform input[type = "email"]:hover,
+.signupform input[type="password"]:hover {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.signupform input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.signupform input[type="submit"]:hover {
+    border: 2px solid #2ecc71;
+    background: linear-gradient(to right, #2ecc71, #1565c0);
+}
+/----------sigin-form---------/
+.login-frame{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    border: none;
+}
+.loginform{
+    max-width: 500px;
+    margin: auto;
+    top: 50px;
+    width: 400px;
+    padding: 30px;
+    position: relative;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    border-radius: 20px;
+}
+.loginform input[type="text"],
+.loginform input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    font-family: Berlin Sans FB;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    color: rgb(255, 255, 255);
+}
+
+.loginform h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Freestyle Script;
+}
+.loginform input[type="text"]:hover,
+.loginform input[type="password"]:hover {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.loginform input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.loginform input[type="submit"]:hover{
+    border: 2px solid #2ecc71;
+    background: linear-gradient(to right, #2ecc71, #1565c0);
+}
+.foot p, a{
+    color: rgb(156, 156, 156);
+}
+.foot hr{
+    color: rgb(92, 91, 91);
+}
+.flash-msg{
+    background-color: #191919;
+    border: none;
+}
+/----------signout-form---------/
+.signout-frame{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    border: none
+}
+.signoutform{
+    width: 400px;
+    padding: 30px;
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    top: 50px;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.signoutform input[type="text"],
+.signoutform input[type = "email"],
+.signoutform input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    font-family: Berlin Sans FB;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    color: rgb(255, 255, 255);
+}
+
+.signoutform h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Freestyle Script;
+}
+.signoutform input[type="text"]:hover,
+.signoutform input[type = "email"]:hover,
+.signoutform input[type="password"]:hover {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.signoutform input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.signoutform input[type="submit"]:hover {
+    border: 2px solid #2ecc71;
+    background: linear-gradient(to right, #2ecc71, #1565c0);
+}
