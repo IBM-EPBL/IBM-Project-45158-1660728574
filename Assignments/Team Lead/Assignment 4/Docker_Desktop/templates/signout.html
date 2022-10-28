@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-out</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="signout-frame" id="id03">
+        <form action="/signout" class="signoutform" method="post">
+            <h1>LOGOUT</h1>
+            <div class="group">
+                <!-- {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category,message in messages %}
+                            <p class="flash-msg alert alert-{{category}}" >{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %} -->
+                <input type="text" name = "Username" placeholder="Username" required>
+            </div>
+            <div class="group">
+                <input type="email" name = "EmailId" placeholder="Email Id" required>
+            </div>
+            <div class="group">
+                <input type="password" name="Password" placeholder="Password" required>
+            </div>
+            <div class="group">
+                <input type="submit" name="signout" id="signout" value="Logout">
+            </div>
+            <div class="foot"> 
+                <hr>
+                <p><a href="/login"><i>Signin</i></a>  / <a href="/register"><i> Signup</i></a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
